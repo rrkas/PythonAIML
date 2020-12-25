@@ -1,0 +1,2 @@
+setting virtual environment--------------------
+$ python3 -m virtualenv -p python3 virtual
