@@ -1,0 +1,5 @@
+straight line
+
+h(x) = @[0] + @[1].x
+
+J(@[0], @[1]) = (1/2m) summation( i=1..m, (h(x[i]) - y[i])^2 )

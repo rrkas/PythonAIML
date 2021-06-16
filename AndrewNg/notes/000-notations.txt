@@ -1,0 +1,8 @@
+@               theta
+m               number of entries in training dataset
+(x[i], y[i])    training dataset i
+h(x)            hypothesis function
+J(@[0], @[1])   cost function               J(@[0], @[1]) = (1/2m) summation( i=1..m, (h(x[i]) - y[i])^2 )
+
+
+target:         minimise J(@[0], @[1])

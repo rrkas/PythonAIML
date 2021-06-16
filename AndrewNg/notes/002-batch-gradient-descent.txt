@@ -1,0 +1,25 @@
+given:      J(@[0], @[1])
+want:       min J(@[0], @[1])
+
+steps:
+    start with some (@[0], @[1])
+    keep changing @[0], @[1] to reduce J(@[0], @[1]) until we end up at minimum
+
+
+algo:
+    repeat until convergence {
+        @[j] := @[j] - a ( del(J(@[0], @[1]) / del(@[j]) )       for j=0 and j=1
+    }
+    := means assigned
+    a = alpha = learning rate (number) : decides the size of step
+    del(J(@[0], @[1]) / del(@[j]) = derivative
+
+correct simulation:
+    temp0 := @[0] - a ( del(J(@[0], @[1]) / del(@[0]) )
+    temp1 := @[1] - a ( del(J(@[0], @[1]) / del(@[1]) )
+    @[0] := temp0
+    @[1] := temp1
+
+size of a:
+    small a         :   algo will be slow
+    big a           :   algo can overshoot, may fail to converge, or even diverge
