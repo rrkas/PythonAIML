@@ -6,3 +6,5 @@ J(@[0], @[1])   cost function               J(@[0], @[1]) = (1/2m) summation( i=
 
 
 target:         minimise J(@[0], @[1])
+
+prediction = data matrix x parameter vector
